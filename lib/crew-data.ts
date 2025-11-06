@@ -28,7 +28,7 @@ export interface CrewMember {
 
 export const crewMembers: CrewMember[] = [
   {
-    name: "Lorenzo",
+    name: "Yarram",
     alias: "REN",
     slug: "lorenzo",
     image: "/crew/lorenzo.jpg",

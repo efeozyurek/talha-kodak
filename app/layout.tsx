@@ -15,7 +15,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "SLY Team",
+  title: "43st",
   description: "SLY Team Landing Page",
 }
 

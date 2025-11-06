@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { crewMembers } from "@/lib/crew-data"
 
 export function CrewSection() {
@@ -21,34 +22,18 @@ export function CrewSection() {
             {firstRow.map((member) => (
               <Link key={member.name} href={`/crew/${member.slug}`} className="group w-[350px] hover:opacity-90 transition-opacity">
                 <div className="relative rounded-lg overflow-hidden bg-gray-900 h-[350px] mb-4 cursor-pointer">
-                  {/* Background with repeated name text */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black">
-                    {/* Repeated name text as background texture */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                      <div className="grid grid-cols-3 gap-2 w-full h-full p-4">
-                        {Array.from({ length: 9 }).map((_, i) => (
-                          <div
-                            key={i}
-                            className="text-white font-bold text-sm md:text-base font-roboto uppercase select-none"
-                          >
-                            {member.name}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    {/* Alias overlay */}
-                    <div className="absolute top-4 left-4 text-white/90 font-roboto text-xs md:text-sm font-medium uppercase z-10">
-                      {member.alias}
-                    </div>
-                    {/* Additional name overlay for texture */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-5">
-                      <div className="text-white font-bold text-6xl md:text-8xl font-roboto uppercase select-none transform rotate-12">
-                        {member.name}
-                      </div>
-                    </div>
+                  {/* Character Image */}
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="350px"
+                  />
+                  {/* Alias overlay */}
+                  <div className="absolute top-4 left-4 text-white/90 bg-black/50 px-2 py-1 rounded font-roboto text-xs md:text-sm font-medium uppercase z-10">
+                    {member.alias}
                   </div>
-                  {/* Placeholder for actual image - will show when image is added */}
-                  <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <h3 className="font-roboto text-xl font-medium text-white text-center uppercase">
                   {member.name}
@@ -62,34 +47,18 @@ export function CrewSection() {
             {secondRow.map((member) => (
               <Link key={member.name} href={`/crew/${member.slug}`} className="group w-[350px] hover:opacity-90 transition-opacity">
                 <div className="relative rounded-lg overflow-hidden bg-gray-900 h-[350px] mb-4 cursor-pointer">
-                  {/* Background with repeated name text */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black">
-                    {/* Repeated name text as background texture */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                      <div className="grid grid-cols-3 gap-2 w-full h-full p-4">
-                        {Array.from({ length: 9 }).map((_, i) => (
-                          <div
-                            key={i}
-                            className="text-white font-bold text-sm md:text-base font-roboto uppercase select-none"
-                          >
-                            {member.name}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    {/* Alias overlay */}
-                    <div className="absolute top-4 left-4 text-white/90 font-roboto text-xs md:text-sm font-medium uppercase z-10">
-                      {member.alias}
-                    </div>
-                    {/* Additional name overlay for texture */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-5">
-                      <div className="text-white font-bold text-6xl md:text-8xl font-roboto uppercase select-none transform rotate-12">
-                        {member.name}
-                      </div>
-                    </div>
+                  {/* Character Image */}
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="350px"
+                  />
+                  {/* Alias overlay */}
+                  <div className="absolute top-4 left-4 text-white/90 bg-black/50 px-2 py-1 rounded font-roboto text-xs md:text-sm font-medium uppercase z-10">
+                    {member.alias}
                   </div>
-                  {/* Placeholder for actual image - will show when image is added */}
-                  <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <h3 className="font-roboto text-xl font-medium text-white text-center uppercase">
                   {member.name}
@@ -103,34 +72,18 @@ export function CrewSection() {
             {thirdRow.map((member) => (
               <Link key={member.name} href={`/crew/${member.slug}`} className="group w-[350px] hover:opacity-90 transition-opacity">
                 <div className="relative rounded-lg overflow-hidden bg-gray-900 h-[350px] mb-4 cursor-pointer">
-                  {/* Background with repeated name text */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black">
-                    {/* Repeated name text as background texture */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                      <div className="grid grid-cols-3 gap-2 w-full h-full p-4">
-                        {Array.from({ length: 9 }).map((_, i) => (
-                          <div
-                            key={i}
-                            className="text-white font-bold text-sm md:text-base font-roboto uppercase select-none"
-                          >
-                            {member.name}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    {/* Alias overlay */}
-                    <div className="absolute top-4 left-4 text-white/90 font-roboto text-xs md:text-sm font-medium uppercase z-10">
-                      {member.alias}
-                    </div>
-                    {/* Additional name overlay for texture */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-5">
-                      <div className="text-white font-bold text-6xl md:text-8xl font-roboto uppercase select-none transform rotate-12">
-                        {member.name}
-                      </div>
-                    </div>
+                  {/* Character Image */}
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    sizes="350px"
+                  />
+                  {/* Alias overlay */}
+                  <div className="absolute top-4 left-4 text-white/90 bg-black/50 px-2 py-1 rounded font-roboto text-xs md:text-sm font-medium uppercase z-10">
+                    {member.alias}
                   </div>
-                  {/* Placeholder for actual image - will show when image is added */}
-                  <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <h3 className="font-roboto text-xl font-medium text-white text-center uppercase">
                   {member.name}
