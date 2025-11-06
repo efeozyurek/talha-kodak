@@ -87,7 +87,7 @@ export const crewMembers: CrewMember[] = [
     slug: "tyrone",
     image: "/crew/tyrone.jpg",
     rolePlayer: "Mordred",
-    streamLink: "kick.com/mordredsly",
+    streamLink: "kick.com/poxanuu",
     status: "Alive",
     dateOfBirth: "1998",
     age: 26,
