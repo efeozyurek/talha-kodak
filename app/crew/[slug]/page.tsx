@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation"
 import { getCrewMemberBySlug, getAllCrewSlugs } from "@/lib/crew-data"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu } from "lucide-react"
 
 export async function generateStaticParams() {
@@ -231,32 +232,13 @@ export default function CrewMemberPage({
 
               {/* Character Image */}
               <div className="relative bg-black aspect-square">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black">
-                  {/* Repeated name text as background texture */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                    <div className="grid grid-cols-3 gap-2 w-full h-full p-4">
-                      {Array.from({ length: 9 }).map((_, i) => (
-                        <div
-                          key={i}
-                          className="text-white font-bold text-sm font-roboto uppercase select-none"
-                        >
-                          {member.name}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  {/* Alias overlay */}
-                  <div className="absolute top-4 left-4 text-white/90 font-roboto text-xs font-medium uppercase z-10">
-                    {member.alias}
-                  </div>
-                  {/* Additional name overlay for texture */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-5">
-                    <div className="text-white font-bold text-6xl font-roboto uppercase select-none transform rotate-12">
-                      {member.name}
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-black/50" />
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 400px"
+                />
               </div>
 
               {/* Biographical Information */}
