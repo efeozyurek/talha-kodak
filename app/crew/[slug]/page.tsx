@@ -94,7 +94,7 @@ export default function CrewMemberPage({
               {/* Hobbies and Phobias */}
               <section id="section-1" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's Hobbies and phobias/fears
+                  Character&apos;s Hobbies and phobias/fears
                 </h2>
                 <p className="font-roboto text-white leading-relaxed mb-4">
                   <strong className="text-red-400">Hobbies:</strong> {member.hobbies}
@@ -132,7 +132,7 @@ export default function CrewMemberPage({
               {/* Childhood */}
               <section id="section-3" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's life from childhood to adulthood
+                  Character&apos;s life from childhood to adulthood
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.childhood}
@@ -142,7 +142,7 @@ export default function CrewMemberPage({
               {/* Family Life */}
               <section id="section-4" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's family life
+                  Character&apos;s family life
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.familyLife}
@@ -152,7 +152,7 @@ export default function CrewMemberPage({
               {/* Education */}
               <section id="section-5" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's Education Life
+                  Character&apos;s Education Life
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.education}
@@ -162,7 +162,7 @@ export default function CrewMemberPage({
               {/* Love Life */}
               <section id="section-6" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's Love Life
+                  Character&apos;s Love Life
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.loveLife}
@@ -172,7 +172,7 @@ export default function CrewMemberPage({
               {/* Business Life */}
               <section id="section-7" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's Business Life
+                  Character&apos;s Business Life
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.businessLife}
@@ -182,7 +182,7 @@ export default function CrewMemberPage({
               {/* Culture */}
               <section id="section-8" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  Character's Culture and way of living
+                  Character&apos;s Culture and way of living
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.culture}
@@ -202,7 +202,7 @@ export default function CrewMemberPage({
               {/* Travel Reason */}
               <section id="section-10" className="scroll-mt-20">
                 <h2 className="font-pirata text-3xl text-white mb-4">
-                  The character's reason for traveling to Los Santos
+                  The character&apos;s reason for traveling to Los Santos
                 </h2>
                 <p className="font-roboto text-white leading-relaxed">
                   {member.travelReason}
